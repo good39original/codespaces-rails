@@ -1,0 +1,71 @@
+/* app/assets/stylesheets/modal.css */
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .close {
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+  }
+
+  button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+  }
+
+  .card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: #333;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  

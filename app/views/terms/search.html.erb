@@ -1,0 +1,11 @@
+document.getElementById('searchBtn').addEventListener('click', function() {
+  var query = document.getElementById('query').value;
+
+  fetch(`/search?query=${query}`)
+    .then(response => response.json())
+    .then(data => {
+      // 検索結果をモーダルに表示
+      document.getElementById('modalResults').innerHTML = `<p>${data.result}</p>`;
+      document.getElementById('myModal').style.display = 'block';
+    });
+});
